@@ -4,6 +4,10 @@ html, body {
     height: 85%;
 }
 
+p {
+    line-height: 1.4rem;
+}
+
 h1 {
     font-family: 'Lato', 'Noto Sans', sans-serif;
     font-size: 2rem;
@@ -60,6 +64,11 @@ nav {
 a {
     text-decoration: none;
     color: black;
+}
+
+strong {
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 .voltar {
@@ -139,9 +148,8 @@ a {
     display: flex;
     flex-direction: column; 
     width: 100%;
-    height: 25%;
     justify-content: flex-start;
-
+    margin-bottom: 1rem;
 }
 
 .fixar {
@@ -154,6 +162,7 @@ a {
     padding: 5%;
     justify-content: center;
     align-items: center;
+    font-size: 100%;
 }
 
 .search-img{
@@ -213,50 +222,59 @@ a {
     font-family: 'Noto Serif', 'Kaisei HarunoUmi', serif;
 }
 
+.texto-index{
+    padding-bottom: 1rem;
+    text-align: center;
+}
 .arvore{
     display: flex;
-    height: 100%;
+    height: 87%;
     position: relative;
 }
 
 .folha1{
     position: absolute;
-    background-color: #F2EDDC;
+    background-color: transparent;
+    color: white;
     font-family: 'Lato', 'Noto Sans', sans-serif;
-    top: 60%;
-    left: 64%;
+    top: 65%;
+    left: 64.7%;
 }
 
 .folha2{
     position: absolute;
-    background-color: #F2EDDC;
+    background-color: transparent;
+    color: white;
     font-family: 'Lato', 'Noto Sans', sans-serif;
-    top: 30%;
+    top: 38%;
     left: 21%;
 }
 
 .folha3{
     position: absolute;
-    background-color: #F2EDDC;
+    background-color: transparent;
+    color: white;
     font-family: 'Lato', 'Noto Sans', sans-serif;
-    top: 13%;
-    left: 56%;
+    top: 24%;
+    left: 56.7%;
 }
 
 .folha4{
     position: absolute;
-    background-color: #F2EDDC;
+    background-color: transparent;
+    color: white;
     font-family: 'Lato', 'Noto Sans', sans-serif;
-    top: 43%;
-    left: 58%;
+    top: 50%;
+    left: 59%;
 }
 
 .folha5{
     position: absolute;
-    background-color: #F2EDDC;
+    background-color: transparent;
+    color: white;
     font-family: 'Lato', 'Noto Sans', sans-serif;
-    top: 61%;
-    left: 16.5%;
+    top: 64.8%;
+    left: 16%;
 }
 
 /* Matemática */
@@ -318,12 +336,24 @@ a {
 .body-topic .formula-topic{
     margin: 1.5rem 0rem;
     text-align: center;
+    border: 0.3rem solid #025959;
+    border-radius: 1rem;
+    padding: 0.1rem;
 }
 
 .body-topic .image-topic{
     float: right;
-    width: 5rem;
-    height: 5rem;
+    width: 40%;
+    height: 40%;
+    margin: 0.5rem;
+}
+
+.oculto {
+    display: none;
+}
+
+#quantidade_formulas, #restantes{
+    margin: 0rem 0.3rem;
 }
 
 .body-topic .references-topic{
@@ -374,4 +404,19 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+.centravertical{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.historico_nav{
+    position:absolute;
+    display: flex;
+    top: 0.8rem;
+    left: 0.8rem;
+    font-size: 0.9rem;
+    flex-direction: row;
 }
