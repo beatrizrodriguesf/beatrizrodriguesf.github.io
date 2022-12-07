@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(event){
+    var url = window.location.href;
+    if (url == 'https://beatrizrodriguesf.github.io/') {
+        window.location = './index.html'
+    }
     dinamica = document.getElementById('dinamica')
     hidrostatica = document.getElementById('hidrostatica')
     hidrodinamica = document.getElementById('hidrodinamica')
